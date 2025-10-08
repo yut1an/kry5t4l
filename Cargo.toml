@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "kry5t4l_client",
+    "kry5t4l_server",
+    "kry5t4l_share",
+]
+resolver = "3"

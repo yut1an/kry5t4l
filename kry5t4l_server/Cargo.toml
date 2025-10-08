@@ -1,0 +1,28 @@
+[package]
+name = "kry5t4l_server"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+kry5t4l_share = { path = "../kry5t4l_share"}
+lazy_static = "1.4.0"
+iced = { version = "0.13.1", features = ["image", "tokio", "advanced"] }
+crossbeam-channel = "0.5"
+chrono = "0.4.42"
+once_cell = "1.21.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+flate2 = "1.0"
+windirs = "1.0.1"
+rfd = "0.15.4"
+image = { version = "0.25.8", features = ["png"] }
+lz4_flex = "0.11"
+winit = "0.29"
+
+[dependencies.windows]
+version = "0.61"
+features = [
+    "Win32_System_Pipes",
+    "Win32_System_Console",
+    "Win32_System_Threading"
+]
